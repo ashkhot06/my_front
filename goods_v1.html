@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экипировка - Футболист КБР</title>
+    <link rel="stylesheet" href="../style/styles.css">
+    <style>
+        .practice-card {
+            background: linear-gradient(135deg, var(--card-bg) 0%, #151515 100%);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border-left: 4px solid var(--accent-green);
+            border: 1px solid var(--border-dark);
+            transition: transform 0.3s ease;
+        }
+
+        .practice-card:hover {
+            transform: translateX(5px);
+            border-color: var(--accent-green);
+        }
+
+        .practice-title {
+            font-size: 20px;
+            color: var(--accent-green);
+            margin: 0 0 10px 0;
+            font-weight: 600;
+        }
+
+        .practice-desc {
+            color: var(--text-gray);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .training-schedule {
+            margin-top: 40px;
+        }
+
+        .schedule-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .day-card {
+            background: linear-gradient(135deg, var(--card-bg) 0%, #151515 100%);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid var(--border-dark);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .day-card:hover {
+            border-color: var(--accent-green);
+            transform: translateY(-3px);
+        }
+
+        .day-card h4 {
+            color: var(--accent-green);
+            margin: 0 0 10px 0;
+            font-size: 16px;
+        }
+
+        .day-card p {
+            color: var(--text-gray);
+            margin: 5px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body class="page-container">
+    <header>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="practices.html">Тренировки</a></li>
+                <li class="nav-item"><a class="nav-link" href="goods.html">Экипировка</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <h2 class="section-title">Футбольная экипировка</h2>
+        <div class="products-grid">
+            <article class="product-card">
+                <img class="product-image" src="../images/boots.webp" alt="Футбольные бутсы" width="526" height="526">
+                <h3 class="product-name">Nike Mercurial Superfly 9</h3>
+                <p class="product-price">15 000 руб.</p>
+            </article>
+            <article class="product-card">
+                <img class="product-image" src="../images/gloves.webp" alt="Перчатки вратаря">
+                <h3 class="product-name">Adidas Predator Pro Gloves</h3>
+                <p class="product-price">8 500 руб.</p>
+            </article>
+            <article class="product-card">
+                <img class="product-image" src="../images/jersey.webp" alt="Игровая форма" width="526" height="526">
+                <h3 class="product-name">Игровая форма Спартак-Нальчик</h3>
+                <p class="product-price">4 200 руб.</p>
+            </article>
+            <article class="product-card">
+                <img class="product-image" src="../images/ball.webp" alt="Футбольный мяч">
+                <h3 class="product-name">Adidas Champions League Ball</h3>
+                <p class="product-price">6 800 руб.</p>
+            </article>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 Мурат Ашхотов. Профессиональный футболист КБР. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">VK</a>
+                <a href="#" class="social-link">Telegram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
