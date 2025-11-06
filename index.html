@@ -5,22 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Профессиональный футболист КБР</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style/styles.css">
 </head>
 
 <body class="page-container">
     <header>
-        <!-- Bootstrap Navbar Component -->
+        <!-- Bootstrap Navbar -->
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
+            <div class="container">
+                <a class="navbar-brand text-white fw-bold" href="#">Футболист КБР</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="nav-list navbar-nav w-100 justify-content-center">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <ul class="navbar-nav ms-auto nav-list">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Главная</a></li>
                         <li class="nav-item"><a class="nav-link" href="pages/news.html">Новости</a></li>
                         <li class="nav-item"><a class="nav-link" href="pages/practices.html">Тренировки</a></li>
                         <li class="nav-item"><a class="nav-link" href="pages/goods.html">Экипировка</a></li>
@@ -30,125 +30,109 @@
             </div>
         </nav>
     </header>
-    
+
     <main class="content">
-        <!-- Profile Header with Bootstrap Grid -->
-        <div class="profile-header">
-            <div class="container text-center">
+        <section class="profile-header text-center">
+            <div class="container">
                 <h1 class="profile-title">Профессиональный футболист</h1>
-                <img class="profile-photo" src="images/profile.jpg" alt="Фото футболиста">
+                <img class="profile-photo img-fluid rounded-circle" src="images/profile.jpg" alt="Фото футболиста">
                 <h2 class="profile-name">Мурат Ашхотов</h2>
                 <p class="profile-group">Нападающий</p>
             </div>
-        </div>
+        </section>
 
-        <!-- About Me Section -->
-        <div class="about-me">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <p>Профессиональный футболист из Кабардино-Балкарии. Выпускник академии ФК "Спартак-Нальчик". Играю на позиции центрального нападающего. Обладаю хорошим голевым чутьем, сильным ударом и высокой скоростью. Цель - выступать в Премьер-Лиге и защищать цвета сборной России.</p>
-                    </div>
-                </div>
+        <section class="about-me py-4">
+            <div class="container text-center">
+                <p>Профессиональный футболист из Кабардино-Балкарии. Выпускник академии ФК "Спартак-Нальчик". Играю на позиции центрального нападающего. Обладаю хорошим голевым чутьем, сильным ударом и высокой скоростью. Цель — выступать в Премьер-Лиге и защищать цвета сборной России.</p>
             </div>
-        </div>
+        </section>
 
-        <!-- Stats Section with Bootstrap Grid -->
-        <div class="stats-container">
+        <section class="stats-container py-5">
             <div class="container">
-                <div class="row">
+                <div class="row text-center">
                     <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="stat-card">
+                        <div class="stat-card card border-0 shadow-sm p-3">
                             <h3>45</h3>
                             <p>Голов за карьеру</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="stat-card">
+                        <div class="stat-card card border-0 shadow-sm p-3">
                             <h3>28</h3>
                             <p>Голевых передач</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="stat-card">
+                        <div class="stat-card card border-0 shadow-sm p-3">
                             <h3>3</h3>
                             <p>Сезона в ФНЛ</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="stat-card">
+                        <div class="stat-card card border-0 shadow-sm p-3">
                             <h3>1.84</h3>
                             <p>Рост (м)</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Skills Section -->
-        <div class="skills-container">
+        <section class="skills-container py-3 text-center">
             <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="skill-tag">Голевое чутье</div>
-                        <div class="skill-tag">Сильный удар</div>
-                        <div class="skill-tag">Высокая скорость</div>
-                        <div class="skill-tag">Игра головой</div>
-                    </div>
-                </div>
+                <span class="skill-tag badge bg-success mx-1">Голевое чутье</span>
+                <span class="skill-tag badge bg-success mx-1">Сильный удар</span>
+                <span class="skill-tag badge bg-success mx-1">Высокая скорость</span>
+                <span class="skill-tag badge bg-success mx-1">Игра головой</span>
             </div>
-        </div>
+        </section>
 
-        <!-- Experience Section with Bootstrap Cards -->
-        <section class="experience-section">
+        <section class="experience-section py-5">
             <div class="container">
-                <h2 class="section-title">Футбольная карьера</h2>
+                <h2 class="section-title text-center mb-4">Футбольная карьера</h2>
                 <div class="row">
                     <div class="col-lg-4 col-md-6 mb-4">
-                        <article class="experience-card">
-                            <h3 class="experience-title">ФК "Спартак-Нальчик"</h3>
-                            <p class="experience-desc">2023-наст. время: Основной нападающий команды. Лучший бомбардир сезона 2023/24 с 15 голами в ФНЛ.</p>
+                        <article class="experience-card card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="experience-title">ФК "Спартак-Нальчик"</h3>
+                                <p class="experience-desc">2023–наст. время: Основной нападающий команды. Лучший бомбардир сезона 2023/24 с 15 голами в ФНЛ.</p>
+                            </div>
                         </article>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
-                        <article class="experience-card">
-                            <h3 class="experience-title">ФК "Эльбрус"</h3>
-                            <p class="experience-desc">2021-2023: Первый профессиональный контракт. 25 голов в 60 матчах.</p>
+                        <article class="experience-card card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="experience-title">ФК "Эльбрус"</h3>
+                                <p class="experience-desc">2021–2023: Первый профессиональный контракт. 25 голов в 60 матчах.</p>
+                            </div>
                         </article>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
-                        <article class="experience-card">
-                            <h3 class="experience-title">Академия ФК "Спартак-Нальчик"</h3>
-                            <p class="experience-desc">2015-2021: Воспитанник академии. Капитан молодежной команды.</p>
+                        <article class="experience-card card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="experience-title">Академия ФК "Спартак-Нальчик"</h3>
+                                <p class="experience-desc">2015–2021: Воспитанник академии. Капитан молодежной команды.</p>
+                            </div>
                         </article>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    
-    <!-- Footer with Bootstrap Grid -->
+
     <footer class="footer">
-        <div class="footer-content">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <p>© 2024 Мурат Ашхотов. Профессиональный футболист КБР. Все права защищены.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="social-links text-md-end">
-                            <a href="#" class="social-link">Instagram</a>
-                            <a href="#" class="social-link">VK</a>
-                            <a href="#" class="social-link">Telegram</a>
-                        </div>
-                    </div>
+        <div class="footer-content py-3">
+            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-0">© 2024 Мурат Ашхотов. Профессиональный футболист КБР. Все права защищены.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link mx-2">Instagram</a>
+                    <a href="#" class="social-link mx-2">VK</a>
+                    <a href="#" class="social-link mx-2">Telegram</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
