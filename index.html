@@ -1,152 +1,257 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Профессиональный футболист КБР</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style/styles.css">
 </head>
 
-<body class="page-container" data-theme="dark">
-    <!-- Кнопка переключения темы -->
-    <div class="theme-switcher">
-        <button class="theme-btn" onclick="toggleTheme()">🌙 Тёмная тема</button>
-    </div>
-
-    <header>
-        <!-- Bootstrap Navbar -->
-        <nav class="navbar navbar-expand-lg">
+<body class="bg-light" data-theme="dark">
+    <div class="container-fluid p-0">
+        <!-- Header -->
+        <header class="bg-primary text-white py-4">
             <div class="container">
-                <a class="navbar-brand" href="#">Футболист КБР</a>
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h1 class="h3 mb-1">Профессиональный футболист</h1>
+                        <p class="mb-0 opacity-75">Нападающий из Кабардино-Балкарии</p>
+                    </div>
+                    <div class="col-auto">
+                        <span class="badge bg-light text-primary">2024</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link active" href="index.html">Главная</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/news.html">Новости</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/practices.html">Тренировки</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/goods.html">Экипировка</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/contacts.html">Контакты</a></li>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">
+                                <i class="bi bi-house me-1"></i>Главная
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/news.html">
+                                <i class="bi bi-newspaper me-1"></i>Новости
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/practices.html">
+                                <i class="bi bi-activity me-1"></i>Тренировки
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/goods.html">
+                                <i class="bi bi-cart me-1"></i>Экипировка
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacts.html">
+                                <i class="bi bi-telephone me-1"></i>Контакты
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
-    </header>
 
-    <main class="content">
-        <section class="profile-header">
-            <div class="container">
-                <h1 class="profile-title">Профессиональный футболист</h1>
-                <img class="profile-photo img-fluid" src="images/profile.jpg" alt="Фото футболиста">
-                <h2 class="profile-name">Мурат Ашхотов</h2>
-                <p class="profile-group">Нападающий</p>
-            </div>
-        </section>
-
-        <section class="about-me">
-            <div class="container text-center">
-                <p>Профессиональный футболист из Кабардино-Балкарии. Выпускник академии ФК "Спартак-Нальчик". Играю на позиции центрального нападающего. Обладаю хорошим голевым чутьем, сильным ударом и высокой скоростью. Цель — выступать в Премьер-Лиге и защищать цвета сборной России.</p>
-            </div>
-        </section>
-
-        <section class="stats-container">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="card card-normal stat-card">
-                            <div class="card-body">
-                                <h3>45</h3>
-                                <p>Голов за карьеру</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="card card-selected stat-card">
-                            <div class="card-body">
-                                <h3>28</h3>
-                                <p>Голевых передач</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="card card-normal stat-card">
-                            <div class="card-body">
-                                <h3>3</h3>
-                                <p>Сезона в ФНЛ</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="card card-normal stat-card">
-                            <div class="card-body">
-                                <h3>1.84</h3>
-                                <p>Рост (м)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="skills-container">
-            <div class="container text-center">
-                <span class="skill-tag">Голевое чутье</span>
-                <span class="skill-tag">Сильный удар</span>
-                <span class="skill-tag">Высокая скорость</span>
-                <span class="skill-tag">Игра головой</span>
-            </div>
-        </section>
-
-        <section class="experience-section">
-            <div class="container">
-                <h2 class="section-title text-center mb-4">Футбольная карьера</h2>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <article class="card experience-card">
-                            <div class="card-body">
-                                <h3 class="experience-title">ФК "Спартак-Нальчик"</h3>
-                                <p class="experience-desc">2023–наст. время: Основной нападающий команды. Лучший бомбардир сезона 2023/24 с 15 голами в ФНЛ.</p>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <article class="card experience-card">
-                            <div class="card-body">
-                                <h3 class="experience-title">ФК "Эльбрус"</h3>
-                                <p class="experience-desc">2021–2023: Первый профессиональный контракт. 25 голов в 60 матчах.</p>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <article class="card experience-card">
-                            <div class="card-body">
-                                <h3 class="experience-title">Академия ФК "Спартак-Нальчик"</h3>
-                                <p class="experience-desc">2015–2021: Воспитанник академии. Капитан молодежной команды.</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-                <p class="mb-0">© 2024 Мурат Ашхотов. Профессиональный футболист КБР. Все права защищены.</p>
-                <div class="social-links">
-                    <a href="#" class="social-link">Instagram</a>
-                    <a href="#" class="social-link">VK</a>
-                    <a href="#" class="social-link">Telegram</a>
-                </div>
-            </div>
+        <!-- Кнопка переключения темы -->
+        <div class="theme-switcher">
+            <button class="theme-btn" onclick="toggleTheme()">🌙 Тёмная тема</button>
         </div>
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Main Content -->
+        <main class="container my-4">
+            <!-- Profile Section -->
+            <section class="mb-5">
+                <div class="card shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-3 text-center mb-3 mb-md-0">
+                                <img src="images/profile.jpg" alt="Фото футболиста" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+                            </div>
+                            <div class="col-md-9">
+                                <h2 class="card-title h4 text-primary">Мурат Ашхотов</h2>
+                                <p class="card-text text-muted mb-2">
+                                    <i class="bi bi-bookmark-check-fill text-primary"></i>
+                                    Нападающий ФК "Спартак-Нальчик"
+                                </p>
+                                <p class="card-text text-content">
+                                    Выпускник академии ФК "Спартак-Нальчик". Обладаю хорошим голевым чутьем, сильным ударом и высокой скоростью.
+                                </p>
+                                <div class="d-flex gap-2 flex-wrap">
+                                    <span class="badge bg-primary">Голевое чутье</span>
+                                    <span class="badge bg-success">Сильный удар</span>
+                                    <span class="badge bg-info">Высокая скорость</span>
+                                    <span class="badge bg-warning">Игра головой</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="mb-5">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-light">
+                        <h3 class="card-title h5 mb-0">
+                            <i class="bi bi-person-circle text-primary"></i>
+                            Обо мне
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-content">
+                            Профессиональный футболист из Кабардино-Балкарии. Выпускник академии ФК "Спартак-Нальчик". Играю на позиции центрального нападающего.
+                        </p>
+                        <p class="card-text text-content">
+                            Цель — выступать в Премьер-Лиге и защищать цвета сборной России. В свободное время занимаюсь дополнительными тренировками и изучаю тактику современных футбольных схем.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="mb-5">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-light">
+                        <h3 class="card-title h5 mb-0">
+                            <i class="bi bi-graph-up text-primary"></i>
+                            Статистика
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="text-content">Голов за карьеру</span>
+                                        <span class="text-primary fw-bold">45</span>
+                                    </div>
+                                    <div class="progress" style="height: 8px;">
+                                        <div class="progress-bar bg-primary" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="text-content">Голевых передач</span>
+                                        <span class="text-primary fw-bold">28</span>
+                                    </div>
+                                    <div class="progress" style="height: 8px;">
+                                        <div class="progress-bar bg-success" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="text-content">Сезонов в ФНЛ</span>
+                                        <span class="text-primary fw-bold">3</span>
+                                    </div>
+                                    <div class="progress" style="height: 8px;">
+                                        <div class="progress-bar bg-info" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="text-content">Рост (м)</span>
+                                        <span class="text-primary fw-bold">1.84</span>
+                                    </div>
+                                    <div class="progress" style="height: 8px;">
+                                        <div class="progress-bar bg-warning" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Career Section -->
+            <section class="mb-5">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-light">
+                        <h3 class="card-title h5 mb-0">
+                            <i class="bi bi-trophy text-primary"></i>
+                            Футбольная карьера
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-primary">ФК "Спартак-Нальчик"</h5>
+                                        <p class="card-text small text-content">
+                                            2023–наст. время: Основной нападающий команды. Лучший бомбардир сезона 2023/24 с 15 голами в ФНЛ.
+                                        </p>
+                                        <div class="mb-2">
+                                            <span class="badge bg-primary">ФНЛ</span>
+                                            <span class="badge bg-primary">15 голов</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-primary">ФК "Эльбрус"</h5>
+                                        <p class="card-text small text-content">
+                                            2021–2023: Первый профессиональный контракт. 25 голов в 60 матчах.
+                                        </p>
+                                        <div class="mb-2">
+                                            <span class="badge bg-success">ПФЛ</span>
+                                            <span class="badge bg-success">25 голов</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-primary">Академия ФК "Спартак-Нальчик"</h5>
+                                        <p class="card-text small text-content">
+                                            2015–2021: Воспитанник академии. Капитан молодежной команды.
+                                        </p>
+                                        <div class="mb-2">
+                                            <span class="badge bg-info">Академия</span>
+                                            <span class="badge bg-info">Капитан</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-4 mt-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="mb-0">&copy; 2024 Мурат Ашхотов. Профессиональный футболист КБР. Все права защищены.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="pages/contacts.html" class="text-white text-decoration-none me-3">Контакты</a>
+                        <a href="#" class="text-white text-decoration-none">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         function toggleTheme() {
             const body = document.body;
@@ -156,29 +261,27 @@
             if (currentTheme === 'dark') {
                 body.setAttribute('data-theme', 'light');
                 themeBtn.textContent = '☀️ Светлая тема';
+                // Сохраняем выбор темы
+                localStorage.setItem('theme', 'light');
             } else {
                 body.setAttribute('data-theme', 'dark');
                 themeBtn.textContent = '🌙 Тёмная тема';
+                // Сохраняем выбор темы
+                localStorage.setItem('theme', 'dark');
             }
         }
 
-        // Выбор карточек
+        // Загружаем сохраненную тему при загрузке страницы
         document.addEventListener('DOMContentLoaded', function() {
-            const cards = document.querySelectorAll('.card-normal, .card-selected');
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            const themeBtn = document.querySelector('.theme-btn');
             
-            cards.forEach(card => {
-                card.addEventListener('click', function() {
-                    // Убираем выделение у всех карточек
-                    cards.forEach(c => {
-                        c.classList.remove('card-selected');
-                        c.classList.add('card-normal');
-                    });
-                    
-                    // Добавляем выделение текущей карточке
-                    this.classList.remove('card-normal');
-                    this.classList.add('card-selected');
-                });
-            });
+            document.body.setAttribute('data-theme', savedTheme);
+            if (savedTheme === 'light') {
+                themeBtn.textContent = '☀️ Светлая тема';
+            } else {
+                themeBtn.textContent = '🌙 Тёмная тема';
+            }
         });
     </script>
 </body>

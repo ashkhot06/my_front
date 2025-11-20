@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экипировка - Футболист КБР</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+
+<body class="page-container" data-theme="dark">
+    <!-- Кнопка переключения темы -->
+    <div class="theme-switcher">
+        <button class="theme-btn" onclick="toggleTheme()">🌙 Тёмная тема</button>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">Футболист КБР</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                        <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                        <li class="nav-item"><a class="nav-link" href="practices.html">Тренировки</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="goods.html">Экипировка</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Футбольная экипировка</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <article class="card product-card card-normal">
+                        <img class="product-image card-img-top" src="../images/boots.webp" alt="Футбольные бутсы">
+                        <div class="card-body text-center">
+                            <h3 class="product-name">Nike Mercurial Superfly 9</h3>
+                            <p class="product-price">15 000 руб.</p>
+                            <button class="btn btn-outline-success btn-sm select-btn">Выбрать</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <article class="card product-card card-normal">
+                        <img class="product-image card-img-top" src="../images/gloves.webp" alt="Перчатки вратаря">
+                        <div class="card-body text-center">
+                            <h3 class="product-name">Adidas Predator Pro Gloves</h3>
+                            <p class="product-price">8 500 руб.</p>
+                            <button class="btn btn-outline-success btn-sm select-btn">Выбрать</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <article class="card product-card card-discount">
+                        <img class="product-image card-img-top" src="../images/jersey.webp" alt="Игровая форма">
+                        <div class="card-body text-center">
+                            <h3 class="product-name">Игровая форма Спартак-Нальчик</h3>
+                            <p class="old-price">5 600 руб.</p>
+                            <p class="discount-price">4 200 руб.</p>
+                            <button class="btn btn-outline-warning btn-sm select-btn">Со скидкой</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <article class="card product-card card-normal">
+                        <img class="product-image card-img-top" src="../images/ball.webp" alt="Футбольный мяч">
+                        <div class="card-body text-center">
+                            <h3 class="product-name">Adidas Champions League Ball</h3>
+                            <p class="product-price">6 800 руб.</p>
+                            <button class="btn btn-outline-success btn-sm select-btn">Выбрать</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-0">© 2024 Мурат Ашхотов. Все права защищены.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">VK</a>
+                    <a href="#" class="social-link">Telegram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const themeBtn = document.querySelector('.theme-btn');
+            const currentTheme = body.getAttribute('data-theme');
+            
+            if (currentTheme === 'dark') {
+                body.setAttribute('data-theme', 'light');
+                themeBtn.textContent = '☀️ Светлая тема';
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeBtn.textContent = '🌙 Тёмная тема';
+            }
+        }
+
+        // Выбор товаров
+        document.addEventListener('DOMContentLoaded', function() {
+            const selectButtons = document.querySelectorAll('.select-btn');
+            
+            selectButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    
+                    // Сбрасываем все карточки к обычному состоянию
+                    document.querySelectorAll('.product-card').forEach(card => {
+                        card.classList.remove('card-selected');
+                        card.classList.add('card-normal');
+                    });
+                    
+                    // Убираем стили с кнопок
+                    selectButtons.forEach(btn => {
+                        if (btn.classList.contains('btn-outline-warning')) {
+                            btn.classList.remove('btn-warning');
+                            btn.classList.add('btn-outline-warning');
+                            btn.textContent = 'Со скидкой';
+                        } else {
+                            btn.classList.remove('btn-success');
+                            btn.classList.add('btn-outline-success');
+                            btn.textContent = 'Выбрать';
+                        }
+                    });
+                    
+                    // Устанавливаем выбранное состояние
+                    const card = this.closest('.product-card');
+                    card.classList.remove('card-normal');
+                    card.classList.add('card-selected');
+                    
+                    if (this.classList.contains('btn-outline-warning')) {
+                        this.classList.remove('btn-outline-warning');
+                        this.classList.add('btn-warning');
+                        this.textContent = 'Выбрано со скидкой';
+                    } else {
+                        this.classList.remove('btn-outline-success');
+                        this.classList.add('btn-success');
+                        this.textContent = 'Выбрано';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
